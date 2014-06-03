@@ -5,29 +5,29 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
         concat: {
             css: {
-                src: ['src/css/*'],
-                dest: 'dist/slideshow.css'
+                src: ['src/*'],
+                dest: 'dist/slideshow.min.css'
             },
             js: {
-                src: ['src/js/*'],
-                dest: 'dist/slideshow.js'
+                src: ['src/*'],
+                dest: 'dist/slideshow.min.js'
             }
         },
         cssmin: {
             css: {
-                src: 'dist/slideshow.css',
+                src: 'dist/slideshow.min.css',
                 dest: 'dist/slideshow.min.css'
             }
         },
         uglify: {
             js: {
                 files: {
-                    'dist/slideshow.min.js': ['dist/slideshow.js']
+                    'dist/slideshow.min.js': ['dist/slideshow.min.js']
                 }
             }
         },
         watch: {
-            files: ['src/js/*', 'src/css/*'],
+            files: ['src/*'],
             tasks: ['concat', 'cssmin', 'uglify']
         }
     });
