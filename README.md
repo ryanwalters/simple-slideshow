@@ -7,7 +7,7 @@ A tiny jQuery slideshow plugin (466 bytes gzipped!).
 `$('.slideshow').slideshow(options);`
 
     options = {
-        delay: 0,       // delay between slides; 0 = off
+        delay: 0,       // delay between slides in ms; 0 = off
         height: null,   // if set, overrides ratio
         pause: true,    // pause on hover
         ratio: 0.5625,  // width:height ratio; 1600x900 assumed
