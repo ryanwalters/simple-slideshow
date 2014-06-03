@@ -140,8 +140,7 @@
     // Detect transition support
 
     $.support.transition = (function(){
-        var b = document.body || document.documentElement,
-            s = b.style;
+        var b = document.body || document.documentElement, s = b.style;
         return s.transition !== undefined || s.WebkitTransition !== undefined || s.MozTransition !== undefined || s.MsTransition !== undefined || s.OTransition !== undefined;
     })();
 

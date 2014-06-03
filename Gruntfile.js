@@ -5,11 +5,11 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
         concat: {
             css: {
-                src: ['src/*'],
+                src: ['src/*.css'],
                 dest: 'dist/slideshow.min.css'
             },
             js: {
-                src: ['src/*'],
+                src: ['src/*.js'],
                 dest: 'dist/slideshow.min.js'
             }
         },
