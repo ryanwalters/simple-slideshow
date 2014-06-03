@@ -4,6 +4,8 @@
  */
 
 ;(function ($, window, document, undefined) {
+    'use strict';
+
     var pluginName = 'slideshow',
         defaults = {
             delay: 0,       // delay between slides; 0 = off
@@ -28,7 +30,7 @@
 
         // Create the necessary DOM elements and classes
 
-        this.element.toggleClass('ui-slideshow', true)
+        $(this.element).toggleClass('ui-slideshow', true)
             .wrap('<div class="ui-slideshow-wrapper" />')
             .children().not('nav').toggleClass('ui-slide', true)
             .siblings('nav').toggleClass('ui-controls', true);
@@ -109,20 +111,38 @@
 
         $(window).on('resize', function () {
             window.clearTimeout(resizeTimeout);
-            resizeTimeout = window.setTimeout(_init, 250);
+            resizeTimeout = window.setTimeout(_setup, 250);
         });
 
-        // Navigate on swipe (can re-enable this after porting over the 'swipe' plugin)
+        // Navigate on swipe (works alongside ryanwalters/simple-swipes)
 
-        /*$wrap.on('swipe', function (e) {
+        $wrap.on('swipe', function (e) {
             if (e.originalEvent.detail.direction.left) ++currentSlide >= length ? currentSlide = 0 : null;
             else if (e.originalEvent.detail.direction.right) --currentSlide < 0 ? currentSlide = length - 1 : null;
             $controls.children().eq(currentSlide).trigger('click');
-        });*/
+        });
 
         // Run setup the first time
 
         _setup();
 
     };
+
+    $.fn[pluginName] = function (options) {
+        return this.each(function () {
+            if (!$.data(this, 'plugin_' + pluginName)) {
+                $.data(this, 'plugin_' + pluginName,
+                new Slideshow(this, options));
+            }
+        });
+    };
+
+    // Detect transition support
+
+    $.support.transition = (function(){
+        var b = document.body || document.documentElement,
+            s = b.style;
+        return s.transition !== undefined || s.WebkitTransition !== undefined || s.MozTransition !== undefined || s.MsTransition !== undefined || s.OTransition !== undefined;
+    })();
+
 })(jQuery, window, document);

@@ -1,0 +1,46 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ryan Walters &ndash; Simple Slideshow Demos</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../src/css/slideshow.css">
+</head>
+<body>
+
+<!-- Demo 1 -->
+
+<div class="slideshow-1">
+    <div>
+        <img src="//lorempixel.com/1600/900/city" alt="some city things" />
+    </div>
+    <div>
+        <img src="//lorempixel.com/1600/900/nature" alt="some nature" />
+    </div>
+    <div>
+        <img src="//lorempixel.com/1600/900/people" alt="some people" />
+    </div>
+    <div>
+        <img src="//lorempixel.com/1600/900/business" alt="some business things" />
+    </div>
+    <div>
+        <img src="//lorempixel.com/1600/900/fashion" alt="some fashion things" />
+    </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="../src/js/slideshow.js"></script>
+<script>
+    $(function () {
+        /* Demos! */
+
+        // Demo 1
+        $('.slideshow-1').slideshow();
+    })
+</script>
+
+</body>
+</html>

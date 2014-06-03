@@ -2,6 +2,9 @@
 
 ###Usage:
 
+`$('.slideshow').slideshow(options);`
+
 ###Author:
 
-Ryan Walters
+- Ryan Walters
+- http://ryanwalters.co
