@@ -24,6 +24,9 @@ module.exports = function (grunt) {
                 files: {
                     'dist/slideshow.min.js': ['dist/slideshow.min.js']
                 }
+            },
+            options: {
+                report: 'gzip'
             }
         },
         watch: {
