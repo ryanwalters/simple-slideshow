@@ -1,6 +1,6 @@
 # Simple Slideshow
 
-A tiny jQuery slideshow plugin (1.9KB min, 466B gzip).
+A tiny jQuery slideshow plugin (466 bytes gzipped!).
 
 ###Usage:
 
