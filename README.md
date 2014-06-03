@@ -1,9 +1,7 @@
 # Simple Slideshow
 
-## A simple, flexible jQuery slideshow
+###Usage:
 
---------------------------------------
+###Author:
 
-Usage:
-
-`to-do`
+Ryan Walters
