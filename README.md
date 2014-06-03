@@ -1,5 +1,7 @@
 # Simple Slideshow
 
+A 1.9KB slideshow plugin.
+
 ###Usage:
 
 `$('.slideshow').slideshow(options);`
