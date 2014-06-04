@@ -12,9 +12,6 @@
         "url": "http://github.com/ryanwalters/simple-slideshow.git"
     },
     "keywords": ["jquery", "simple", "slideshow"],
-    "dependencies": {
-        "jquery": ">=2"
-    },
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-contrib-concat": "~0.4.0",

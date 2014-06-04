@@ -41,7 +41,7 @@
     border-radius: 100%;
     display: inline-block;
     height: 10px;
-    margin: 0 5px;
+    margin: 5px;
     transition: 0.3s all;
     width: 10px;
 }
