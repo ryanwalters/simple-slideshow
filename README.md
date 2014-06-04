@@ -15,6 +15,10 @@ A tiny jQuery slideshow plugin (466 bytes gzipped!).
         startSlide: 0   // 0-based; e.g. 0 is the first slide
     }
 
+###Demos:
+
+- http://ryanwalters.github.io/simple-slideshow
+
 ###Author:
 
 - Ryan Walters
