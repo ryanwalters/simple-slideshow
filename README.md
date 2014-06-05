@@ -1,4 +1,4 @@
-# Simple Slideshow
+# Simple Slideshow [![Build Status](https://travis-ci.org/ryanwalters/simple-slideshow.svg?branch=master)](https://travis-ci.org/ryanwalters/simple-slideshow)
 
 A tiny jQuery slideshow plugin (466 bytes gzipped!).
 
