@@ -1,6 +1,9 @@
 /*!
- * Simple Slideshow
- * Author: Ryan Walters
+ * Simple Slideshow - v0.1.1
+ * http://ryanwalters.github.io/simple-slideshow
+ *
+ * Copyright (c) 2014 Ryan Walters <shout@ryanwalters.co>
+ * Licensed under the MIT License
  */
 
 ;(function ($, window, document, undefined) {
@@ -19,9 +22,6 @@
     function Slideshow(element, options) {
         this.element = element;
         this.options = $.extend({}, defaults, options);
-
-        this._defaults = defaults;
-        this._name = pluginName;
 
         this._init();
     }
