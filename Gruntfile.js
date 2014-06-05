@@ -2,7 +2,7 @@
 
 module.exports = function (grunt) {
     grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
+        pkg: grunt.file.readJSON('bower.json'),
         concat: {
             css: {
                 src: ['src/*.css'],
@@ -46,9 +46,8 @@ module.exports = function (grunt) {
             options: {
                 specs: 'tests/specs/SlideshowSpec.js',
                 vendor: [
-                    'node_modules/jquery/dist/jquery.js',
-                    //'node_modules/jasmine-jquery/lib/jasmine-jquery.js' // won't work until jasmine-jquery@>=2
-                    '//cdn.rawgit.com/velesin/jasmine-jquery/2.0.3/lib/jasmine-jquery.js'
+                    'bower_components/jquery/dist/jquery.js',
+                    'bower_components/jasmine-jquery/lib/jasmine-jquery.js'
                 ],
                 styles: 'src/**/*.css',
                 outfile: 'tests/SpecRunner.html'

@@ -8,7 +8,7 @@
 
     var pluginName = 'slideshow',
         defaults = {
-            delay: 4000,       // delay between slides in ms; 0 = off
+            delay: 4000,    // delay between slides in ms; 0 = off
             height: null,   // if set, overrides ratio
             pause: true,    // pause on hover
             ratio: 0.5625,  // width:height ratio; 1600x900 assumed

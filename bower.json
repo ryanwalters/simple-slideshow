@@ -1,0 +1,23 @@
+{
+  "title": "Simple Slideshow",
+  "description": "A simple, flexible jQuery slideshow.",
+  "name": "simple-slideshow",
+  "version": "0.1.1",
+  "author": {
+    "name": "Ryan Walters",
+    "url": "http://ryanwalters.co"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ryanwalters/simple-slideshow.git"
+  },
+  "keywords": [
+    "jquery",
+    "simple",
+    "slideshow"
+  ],
+  "devDependencies": {
+    "jquery": ">=2",
+    "jasmine-jquery": "~2.0.3"
+  }
+}
