@@ -1,12 +1,10 @@
 {
-  "title": "Simple Slideshow",
-  "description": "A simple, flexible jQuery slideshow.",
   "name": "simple-slideshow",
-  "version": "0.1.2",
-  "author": {
-    "name": "Ryan Walters",
-    "url": "http://ryanwalters.co"
-  },
+  "description": "A tiny, flexible jQuery slideshow.",
+  "authors": [
+    "Ryan Walters (http://ryanwalters.co)"
+  ],
+  "homepage": "http://ryanwalters.github.io/simple-slideshow",
   "repository": {
     "type": "git",
     "url": "http://github.com/ryanwalters/simple-slideshow.git"
