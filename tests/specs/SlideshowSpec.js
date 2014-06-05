@@ -1,5 +1,12 @@
 describe('Slideshow', function () {
-    it('should be true', function () {
-        expect(true).toEqual(true);
-    })
+    var fixture;
+
+    beforeEach(function () {
+        fixture = $('<div>Hello world!</div>');
+    });
+
+    it('should use an inline fixture', function () {
+        expect(fixture).toContainHtml('Hello world!');
+    });
+
 });

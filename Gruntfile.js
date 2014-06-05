@@ -1,6 +1,6 @@
-'use strict';
-
 module.exports = function (grunt) {
+    'use strict';
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('bower.json'),
         concat: {
@@ -34,9 +34,14 @@ module.exports = function (grunt) {
             tasks: ['concat', 'cssmin', 'uglify']
         },
         jshint: {
-            all: ['src/*.js'],
+            all: [
+                'Gruntfile.js',
+                'src/*.js',
+                'tests/specs/*Spec.js'
+            ],
             options: {
-                expr: true
+                expr: true,
+                node: true
             }
         },
         jasmine: {
