@@ -1,5 +1,5 @@
 /*!
- * Simple Slideshow - v0.1.3
+ * Simple Slideshow - v0.1.4
  * http://ryanwalters.github.io/simple-slideshow
  *
  * Copyright (c) 2014 Ryan Walters <shout@ryanwalters.co>
