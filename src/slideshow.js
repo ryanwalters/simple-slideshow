@@ -120,8 +120,8 @@
             // Navigate on swipe (works alongside ryanwalters/simple-swipes)
 
             $wrap.on('swipe', function (e) {
-                if (e.originalEvent.detail.direction.left) ++currentSlide >= length ? currentSlide = 0 : null;
-                else if (e.originalEvent.detail.direction.right) --currentSlide < 0 ? currentSlide = length - 1 : null;
+                if (e.originalEvent.detail.direction === 'LEFT') ++currentSlide >= length ? currentSlide = 0 : null;
+                else if (e.originalEvent.detail.direction === 'RIGHT') --currentSlide < 0 ? currentSlide = length - 1 : null;
                 $controls.children().eq(currentSlide).trigger('click');
             });
 
