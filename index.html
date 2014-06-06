@@ -29,26 +29,37 @@
         </ul>
     </div>
 </div>
+
 <div class="container">
-
-    <!-- Demo 1 -->
-
-    <h1>Demo 1 <small>Basic slideshow</small></h1>
-    <div class="slideshow-1">
+    <div class="rw-slideshow-1">
         <div>
-            <img src="//placehold.it/1140x642/F39C12/FFF&text=Tangerine!" alt="" />
+            <img src="//placehold.it/1600x900/F39C12/FFF&text=+" alt="" />
+            <div class="rw-abs top left">
+                <h4>Simple Slideshow <small>Hassle free &trade;</small></h4>
+                <p>Don't wrestle with your plugin to make it do what you want.</p>
+            </div>
         </div>
         <div>
-            <img src="//placehold.it/1140x642/3498DB/FFF&text=Blueberry!" alt="" />
+            <img src="//placehold.it/1600x900/3498DB/FFF&text=+" alt="" />
+            <div class="rw-abs bottom right">
+                <p>Simplicity is paramount. Complex plugins can get in the way of styling your content.</p>
+                <p>And being only 462 bytes after gzip doesn't hurt.</p>
+            </div>
         </div>
         <div>
-            <img src="//placehold.it/1140x642/E74C3C/FFF&text=Tomato!" alt="" />
+            <img src="//placehold.it/1600x900/E74C3C/FFF&text=+" alt="" />
+            <div class="rw-abs top right">
+                <p>With Simple Slideshow, you're free to style your content however you want. We won't interfere, scout's honor.
+            </div>
         </div>
         <div>
-            <img src="//placehold.it/1140x642/00DBA3/FFF&text=Emerald!" alt="" />
+            <img src="//placehold.it/1600x900/00DBA3/FFF&text=+" alt="" />
+            <div class="rw-abs center">
+                <h4>So let's get started.</h4>
+                <p><a href="//github.com/ryanwalters/simple-slideshow" class="btn btn-primary">Download</a></p>
+            </div>
         </div>
     </div>
-
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -59,7 +70,9 @@
         /* Demos! */
 
         // Demo 1
-        $('.slideshow-1').slideshow();
+        $('.rw-slideshow-1').slideshow({
+            delay: 0
+        });
     });
 </script>
 
