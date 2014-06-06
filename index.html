@@ -62,12 +62,15 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <script src="//cdn.rawgit.com/ryanwalters/simple-slideshow/0.1.4/src/slideshow.js"></script>
+<script src="//cdn.rawgit.com/ryanwalters/simple-swipes/0.1.2/src/swipes.js"></script>
 <script>
     $(function () {
         /* Demos! */
 
+        var delay = screen.width > 768 ? 4000 : 0; // if <= 768, assuming mobile device
+
         // Demo 1
-        $('.rw-slideshow-1').slideshow();
+        $('.rw-slideshow-1').slideshow({ delay: delay });
     });
 </script>
 
