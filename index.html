@@ -56,6 +56,7 @@
             <img src="//placehold.it/1140x642/00DBA3/FFF&text=Emerald!" alt="" />
         </div>
     </div>
+    <h3 class="visible-xs visible-sm text-center">Swipe me!</h3>
 
 </div>
 
@@ -67,7 +68,19 @@
     $(function () {
         /* Demos! */
 
-        var delay = screen.width > 768 ? 4000 : 0; // if <= 768, assuming mobile device
+        // Quick and dirty mobile detection
+        var isMobile = false,
+            delay;
+
+        ['mobile', 'opera mobi', 'opera mini', 'android', 'nucleus', 'nokia', 'iemobile', 'blackberry', 'windows phone', 'bb10', 'playbook', 'kindle', 'silk', 'arm;'].forEach(function (v) {
+            if (navigator.userAgent.toLowerCase().indexOf(v) !== -1) {
+                isMobile = true;
+                return false;
+            }
+        });
+
+        // Don't automatically progress slides on mobile (to show off swipes!)
+        delay = isMobile ? 0 : 4000;
 
         // Demo 1
         $('.rw-slideshow-1').slideshow({ delay: delay });
