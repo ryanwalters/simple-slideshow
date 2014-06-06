@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="//bootswatch.com/darkly/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdn.rawgit.com/ryanwalters/simple-slideshow/0.1.3/src/slideshow.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/ryanwalters/simple-slideshow/0.1.4/src/slideshow.css">
     <link rel="stylesheet" href="resources/css/main.css">
 </head>
 <body>
@@ -17,62 +17,57 @@
 <div class="navbar navbar-default">
     <div class="container">
         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <a href="" class="navbar-brand">Simple Slideshow</a>
         </div>
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="/simple-slideshow">Slideshow</a></li>
-            <li class="disabled"><a href="/simple-swipes">Swipes</a></li>
-            <li class="disabled"><a href="/simple-scroll">Scroll</a></li>
-        </ul>
-        <ul class="nav navbar-nav pull-right">
-            <li><a href="//ryanwalters.co">&mdash; by Ryan Walters</a></li>
-        </ul>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/simple-slideshow">Slideshow</a></li>
+                <li><a href="/simple-swipes">Swipes</a></li>
+                <li class="disabled"><a href="/simple-scroll">Scroll</a></li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+                <li><a href="//ryanwalters.co">&mdash; by Ryan Walters</a></li>
+            </ul>
+        </div>
     </div>
 </div>
 
 <div class="container">
+
+    <!-- Demo 1 -->
+
+    <h1>Demo <small>Basic slideshow</small></h1>
     <div class="rw-slideshow-1">
         <div>
-            <img src="//placehold.it/1600x900/F39C12/FFF&text=+" alt="" />
-            <div class="rw-abs top left">
-                <h4>Simple Slideshow <small>Hassle free &trade;</small></h4>
-                <p>Don't wrestle with your plugin to make it do what you want.</p>
-            </div>
+            <img src="//placehold.it/1140x642/F39C12/FFF&text=Tangerine!" alt="" />
         </div>
         <div>
-            <img src="//placehold.it/1600x900/3498DB/FFF&text=+" alt="" />
-            <div class="rw-abs bottom right">
-                <p>Simplicity is paramount. Complex plugins can get in the way of styling your content.</p>
-                <p>And being only 462 bytes after gzip doesn't hurt.</p>
-            </div>
+            <img src="//placehold.it/1140x642/3498DB/FFF&text=Blueberry!" alt="" />
         </div>
         <div>
-            <img src="//placehold.it/1600x900/E74C3C/FFF&text=+" alt="" />
-            <div class="rw-abs top right">
-                <p>With Simple Slideshow, you're free to style your content however you want. We won't interfere, scout's honor.
-            </div>
+            <img src="//placehold.it/1140x642/E74C3C/FFF&text=Tomato!" alt="" />
         </div>
         <div>
-            <img src="//placehold.it/1600x900/00DBA3/FFF&text=+" alt="" />
-            <div class="rw-abs center">
-                <h4>So let's get started.</h4>
-                <p><a href="//github.com/ryanwalters/simple-slideshow" class="btn btn-primary">Download</a></p>
-            </div>
+            <img src="//placehold.it/1140x642/00DBA3/FFF&text=Emerald!" alt="" />
         </div>
     </div>
+
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<script src="//cdn.rawgit.com/ryanwalters/simple-slideshow/0.1.3/src/slideshow.js"></script>
+<script src="//cdn.rawgit.com/ryanwalters/simple-slideshow/0.1.4/src/slideshow.js"></script>
 <script>
     $(function () {
         /* Demos! */
 
         // Demo 1
-        $('.rw-slideshow-1').slideshow({
-            delay: 0
-        });
+        $('.rw-slideshow-1').slideshow();
     });
 </script>
 
