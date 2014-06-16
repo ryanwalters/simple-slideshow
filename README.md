@@ -4,7 +4,8 @@ A tiny jQuery slideshow plugin (462 bytes gzipped!).
 
 ###Usage:
 
-`$('.slideshow').slideshow(options);`
+- Include `slideshow.js` and `slideshow.css` - `bower install simple-slideshow` or [download it](https://github.com/ryanwalters/simple-slideshow/archive/0.1.4.zip)
+- `$('.slideshow').slideshow(options);`
 
     options = {
         delay: 0,       // delay between slides in ms; 0 = off
