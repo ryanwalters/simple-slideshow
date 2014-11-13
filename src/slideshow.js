@@ -91,7 +91,7 @@
 
             // Navigate slides
 
-            $controls.children().on('click', function () {
+            $controls.children().on('click.simple-slideshow', function () {
                 var $this = $(this),
                     idx = $this.index(),
                     left = idx * width * -1;
@@ -106,20 +106,20 @@
             // Start/stop slide delay
 
             $wrap.on({
-                'mouseover': _stopInterval,
-                'mouseout': _startInterval
+                'mouseover.simple-slideshow': _stopInterval,
+                'mouseout.simple-slideshow': _startInterval
             });
 
             // Resize the show when window does
 
-            $(window).on('resize', function () {
+            $(window).on('resize.simple-slideshow', function () {
                 window.clearTimeout(resizeTimeout);
                 resizeTimeout = window.setTimeout(_setup, 250);
             });
 
             // Navigate on swipe (works alongside ryanwalters/simple-swipes)
 
-            $wrap.on('swipe', function (e) {
+            $wrap.on('swipe.simple-slideshow', function (e) {
                 if (e.originalEvent.detail.direction === 'LEFT') ++currentSlide >= length ? currentSlide = 0 : null;
                 else if (e.originalEvent.detail.direction === 'RIGHT') --currentSlide < 0 ? currentSlide = length - 1 : null;
                 $controls.children().eq(currentSlide).trigger('click');
@@ -143,7 +143,7 @@
 
     // Detect transition support
 
-    $.support.transition = (function(){
+    $.support.transition = (function (){
         var b = document.body || document.documentElement, s = b.style;
         return s.transition !== undefined || s.WebkitTransition !== undefined || s.MozTransition !== undefined || s.MsTransition !== undefined || s.OTransition !== undefined;
     })();
